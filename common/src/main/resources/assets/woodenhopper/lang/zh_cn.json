@@ -1,0 +1,23 @@
+{
+  "block.woodenhopper.wooden_hopper": "木漏斗",
+  "block.woodenhopper.wooden_hopper.desc.cannotAbsorbItemsFromWorld": "无法吸取上方的掉落物。",
+  "block.woodenhopper.wooden_hopper.desc.cannotAbsorbItemsFromInventories": "无法从上方容器抽取物品。",
+
+  "text.autoconfig.woodenhopper.title": "木漏斗设置",
+
+  "text.autoconfig.woodenhopper.option.COOLDOWN": "木漏斗冷却",
+  "text.autoconfig.woodenhopper.option.COOLDOWN.@Tooltip[0]": "§6§l木漏斗冷却",
+  "text.autoconfig.woodenhopper.option.COOLDOWN.@Tooltip[1]": "木漏斗两次工作之间经过的时间（单位：刻）。",
+  "text.autoconfig.woodenhopper.option.COOLDOWN.@Tooltip[2]": "§7§o默认：16",
+  "text.autoconfig.woodenhopper.option.COOLDOWN.@Tooltip[3]": "§7§o（原版漏斗：8）",
+
+  "text.autoconfig.woodenhopper.option.PULL_ITEMS_FROM_WORLD_ENABLED": "从世界中吸取物品",
+  "text.autoconfig.woodenhopper.option.PULL_ITEMS_FROM_WORLD_ENABLED.@Tooltip[0]": "§6§l从世界中吸取物品",
+  "text.autoconfig.woodenhopper.option.PULL_ITEMS_FROM_WORLD_ENABLED.@Tooltip[1]": "木漏斗是否可以吸取其上方的掉落物。",
+  "text.autoconfig.woodenhopper.option.PULL_ITEMS_FROM_WORLD_ENABLED.@Tooltip[2]": "§7§o默认：开",
+
+  "text.autoconfig.woodenhopper.option.PULL_ITEMS_FROM_INVENTORIES_ENABLED": "从容器中抽取物品",
+  "text.autoconfig.woodenhopper.option.PULL_ITEMS_FROM_INVENTORIES_ENABLED.@Tooltip[0]": "§6§l从容器中抽取物品",
+  "text.autoconfig.woodenhopper.option.PULL_ITEMS_FROM_INVENTORIES_ENABLED.@Tooltip[1]": "木漏斗是否可以从其上方的容器中抽取物品。",
+  "text.autoconfig.woodenhopper.option.PULL_ITEMS_FROM_INVENTORIES_ENABLED.@Tooltip[2]": "§7§o默认：开"
+}

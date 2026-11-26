@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${mod_description} (Unofficial 1.20.1 Fabric port)",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contributors": [
+    "1.20.1 Fabric port by ${port_author}"
+  ],
+  "contact": {
+    "homepage": "${mod_url}",
+    "sources": "${port_repo}",
+    "issues": "${port_repo}/issues"
+  },
+  "license": "${mod_license}",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "${group}.FabricWoodenHopperMod"
+    ],
+    "client": [
+      "${group}.client.FabricWoodenHopperClientMod"
+    ],
+    "modmenu": [
+      "${group}.compat.ModMenuCompat"
+    ]
+  },
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=${minecraft_version} <1.20.2",
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": ">=${fabric_version}",
+    "cloth-config": ">=${cloth_config_version}"
+  },
+  "recommends": {
+    "modmenu": ">=${mod_menu_version}"
+  }
+}

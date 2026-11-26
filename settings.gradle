@@ -1,0 +1,33 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        exclusiveContent {
+            forRepository {
+                maven {
+                    name = 'Sponge'
+                    url = uri('https://repo.spongepowered.org/repository/maven-public')
+                }
+            }
+            filter {
+                includeGroupAndSubgroups("org.spongepowered")
+                // The Sponge vanilla-gradle plugin (used by :common) pulls ForgeAutoRenamingTool,
+                // which is proxied by the Sponge repo. Without this the Fabric-only build fails
+                // with "Could not find net.minecraftforge:ForgeAutoRenamingTool:1.0.8".
+                includeGroup("net.minecraftforge")
+            }
+        }
+    }
+}
+
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
+}
+
+// This should match the folder name of the project, or else IDEA may complain (see https://youtrack.jetbrains.com/issue/IDEA-317606)
+rootProject.name = 'WoodenHopper'
+include("common")
+include("fabric")
